@@ -5,6 +5,11 @@
   font-size: 1em;
 }
 
+body h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 nav {
   list-style: none;
   text-decoration: none;
@@ -12,6 +17,18 @@ nav {
 
 #search {
   background-color: white;
+  font-size: 2em;
+  text-align: center;
+  margin-left: 3em;
+}
+#doSearch {
+  color: white;
+  background-color: rgb(26, 156, 26);
+  font-size: 2em;
+  padding: 0.3em;
+}
+#doSearch:active {
+  background-color: brown;
 }
 
 .house {

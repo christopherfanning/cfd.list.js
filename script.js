@@ -35,6 +35,9 @@ buildList = () => {
     mapsLink = houses[i].address.replace(regex, "+");
     houseContainer.className = "house";
     houseContainer.innerHTML =
+      "<img src='" +
+      houses[i].profilePic +
+      "'>" +
       "<h3>" +
       houses[i].name +
       "</h3>" +
@@ -47,10 +50,7 @@ buildList = () => {
       "</p>" +
       "<p>" +
       houses[i].rigs +
-      "</p>" +
-      "<img src='" +
-      houses[i].profilePic +
-      "'>";
+      "</p>";
 
     document.getElementById("houses").appendChild(houseContainer);
   }
