@@ -1,14 +1,17 @@
 // create an array of the houses
-const houses = ["apple", "blue", "house", "red"];
+const houses = ["Engine 1", "Engine 2", "Engine 3", "red"];
 
 // Print out the houses in some formatted way
 printHouses = () => {
+  var newContainer = document.createElement("div");
+  newContainer.id = "houses";
+  document.body.appendChild(newContainer);
+
   for (var h in houses) {
     var newElement = document.createElement("div");
-    newElement.id = houses[h];
     newElement.className = "house";
     newElement.innerHTML = houses[h];
-    document.body.appendChild(newElement);
+    document.getElementById("houses").appendChild(newElement);
   }
 };
 
