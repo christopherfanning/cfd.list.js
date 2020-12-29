@@ -1,0 +1,12 @@
+* {
+  background-color: gray;
+}
+
+nav {
+  list-style: none;
+  text-decoration: none;
+}
+
+.house {
+  background-color: blue;
+}
