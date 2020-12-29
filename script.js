@@ -47,7 +47,10 @@ buildList = () => {
       "</p>" +
       "<p>" +
       houses[i].rigs +
-      "</p>";
+      "</p>" +
+      "<img src='" +
+      houses[i].profilePic +
+      "'>";
 
     document.getElementById("houses").appendChild(houseContainer);
   }

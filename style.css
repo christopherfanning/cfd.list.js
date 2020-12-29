@@ -22,3 +22,7 @@ nav {
 .house * {
   background-color: white;
 }
+
+.house img {
+  max-height: 100px;
+}
