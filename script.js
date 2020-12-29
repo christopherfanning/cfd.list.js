@@ -27,11 +27,20 @@ buildList = () => {
   //   }
 
   for (let i = 0; i < houses.length; i++) {
-    var newElement = document.createElement("div");
-    newElement.className = "house";
-    newElement.innerHTML = houses[i].name;
-    document.getElementById("houses").appendChild(newElement);
-    // document.body.appendChild(houses[i].name);
+    // Creates a Div for the house
+    var houseContainer = document.createElement("div");
+    houseContainer.className = "house";
+    houseContainer.innerHTML =
+      "<h3>" +
+      houses[i].name +
+      "</h3>" +
+      "<p>" +
+      houses[i].address +
+      "</p>" +
+      "<p>" +
+      houses[i].rigs +
+      "</p>";
+    document.getElementById("houses").appendChild(houseContainer);
   }
 };
 

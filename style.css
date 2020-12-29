@@ -1,5 +1,8 @@
 * {
   background-color: gray;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
 }
 
 nav {
@@ -7,12 +10,15 @@ nav {
   text-decoration: none;
 }
 
+#search {
+  background-color: white;
+}
+
 .house {
-  background-color: blue;
+  background-color: white;
   padding: 1em;
   margin: 1em;
 }
-
-#search {
+.house * {
   background-color: white;
 }
