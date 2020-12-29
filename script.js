@@ -3,23 +3,39 @@
 
 // Print out the houses in some formatted way
 // printHouses = () => {
-//   var newContainer = document.createElement("div");
-//   newContainer.id = "houses";
-//   document.body.appendChild(newContainer);
+var newContainer = document.createElement("div");
+newContainer.id = "houses";
+document.body.appendChild(newContainer);
 
-//   for (var h in houses) {
-//     var newElement = document.createElement("div");
-//     newElement.className = "house";
-//     newElement.innerHTML = houses[h];
-//     document.getElementById("houses").appendChild(newElement);
-//   }
+// for (var h in houses) {
+//   var newElement = document.createElement("div");
+//   newElement.className = "house";
+//   newElement.innerHTML = houses[h];
+//   document.getElementById("houses").appendChild(newElement);
+// }
 // };
 
 function load() {
-  var derp = JSON.parse(houses);
-  console.log(derp[1].name);
+  //   console.log(houses[0].name);
 }
-load();
+// load();
+
+buildList = () => {
+  //   for (var h in houses) {
+  //     console.log(houses[1].name);
+
+  //   }
+
+  for (let i = 0; i < houses.length; i++) {
+    var newElement = document.createElement("div");
+    newElement.className = "house";
+    newElement.innerHTML = houses[i].name;
+    document.getElementById("houses").appendChild(newElement);
+    // document.body.appendChild(houses[i].name);
+  }
+};
+
+buildList();
 
 // printHouses();
 

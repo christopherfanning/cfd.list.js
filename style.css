@@ -9,4 +9,10 @@ nav {
 
 .house {
   background-color: blue;
+  padding: 1em;
+  margin: 1em;
+}
+
+#search {
+  background-color: white;
 }
