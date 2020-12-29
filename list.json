@@ -1,9 +1,9 @@
-{"houses": 
+var houses = '{"houses":[ 
  
  {
         "name": "Engine 1",
         "profilePic": "assets/img/houses/E1.jpg",
-        "about": "",
+        "about": "}",
         "rigs": "E1, AT1, A41",
         "phone": "312.427.4625",
         "address": "419 S Wells",
@@ -1093,6 +1093,5 @@
         "district": "5",
         "battalion": "24"
 	}
-}
+]}';
 
-}
