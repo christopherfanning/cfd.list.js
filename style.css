@@ -1,5 +1,5 @@
 * {
-  background-color: gray;
+  background-color: rgb(71, 69, 69);
   padding: 0;
   margin: 0;
   font-size: 1em;
@@ -25,21 +25,27 @@ nav {
   color: white;
   background-color: rgb(26, 156, 26);
   font-size: 2em;
-  padding: 0.3em;
+  padding: 0.2em 1em;
+}
+
+#doSearch:hover {
+  background-color: green;
 }
 #doSearch:active {
-  background-color: brown;
+  background-color: rgb(177, 231, 133);
 }
 
 .house {
-  background-color: white;
+  color: #a7bbec;
+  background-color: #020202;
   padding: 1em;
   margin: 1em;
 }
 .house * {
-  background-color: white;
+  background-color: #020202;
 }
 
 .house img {
   max-height: 100px;
+  display: inline-block;
 }
